@@ -14,5 +14,5 @@ A Python and a MATLAB client with same HTTP requests, including sending `Python 
 
 ```bash
 export FLASK_APP=python_server.py
-flash run
+flask run
 ```
