@@ -20,3 +20,7 @@ def post_json_test():
 
     # NOTE: cannot use tuple as key
     return jsonify({'message': 'request success', 'data': input_json})
+
+
+if __name__ == '__main__':
+    app.run()

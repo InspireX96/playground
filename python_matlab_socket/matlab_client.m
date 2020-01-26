@@ -14,8 +14,13 @@ response = webwrite(url, data, options)
 disp(response.data)
 
 %% test POST matrix
-data = rand(4, 4)   % send a double matrix
+tic   % timing
+
+data = rand(1000, 8)   % send a double matrix
+
 response = webwrite(url, data, options)
 
 % convert back
 disp(response.data)
+
+toc   % timing
